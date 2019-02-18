@@ -1,0 +1,12 @@
+= 我的 SpaceVim 速查手册
+:experimental:
+
+== 让 SpaceVim 显示 JSON 的引号
+
+[source, vim]
+----
+:e $VIMRUNTIME/syntax/json.vim
+:g/if has('conceal')/s//& \&\& 0/
+:wq
+----
+

@@ -1,0 +1,23 @@
+= My Bash Shell Cheat Sheet
+
+== Check if a program exists from a bash script
+
+link:Source[https://stackoverflow.com/a/26759734/6120806]
+
+The following is a portable way to check whether a command exists in $PATH and is executable:
+
+[source, bash]
+----
+[ -x "$(command -v foo)" ]
+----
+
+Example:
+
+[source, bash]
+----
+if ! [ -x "$(command -v git)" ]; then
+  echo 'Error: git is not installed.' >&2
+  exit 1
+fi
+----
+
