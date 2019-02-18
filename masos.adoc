@@ -1,0 +1,6 @@
+= 我的 macOS 使用手册
+:experimental:
+
+== Finder 通过路径跳转
+
+在任意 Finder 窗口中按下 kbd:[Shift] + kbd:[Cmd] + kbd:[G] 就可以进行跳转了
