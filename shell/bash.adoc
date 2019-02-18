@@ -2,7 +2,7 @@
 
 == Check if a program exists from a bash script
 
-link:Source[https://stackoverflow.com/a/26759734/6120806]
+https://stackoverflow.com/a/26759734/6120806[From StackOverflow]
 
 The following is a portable way to check whether a command exists in $PATH and is executable:
 
