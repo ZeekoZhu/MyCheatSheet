@@ -79,6 +79,9 @@ name = 'lang#fsharp'
 [[layers]]
 name = 'lang#dockerfile'
 
+[[custom_plugins]]
+  name = "wakatime/vim-wakatime"
+
 # [[custom_plugins]]
 # name = 'fsharp/vim-fsharp'
 # on_ft = 'fsharp'
