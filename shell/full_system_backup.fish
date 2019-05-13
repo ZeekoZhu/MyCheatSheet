@@ -1,3 +1,7 @@
 #!/usr/bin/fish
-rsync -aAXH --inplace --info=progress2 --delete --exclude={"/swapfile","/var/log/journal/*","/dev/*","/proc/*", "/sys/*","/tmp/*","/run/*","/mnt/*","/media/*","/lost+found","/home/*/.nuget/*", "/home/*/.cache/*", "/home/*/OneDrive/*"} / $argv
+function full_system_backup
+  if test -d $argv[1]; and test -n $argv[1]
+    rsync -aAXH --inplace --info=progress2 --delete --exclude={"/swapfile","/var/log/journal/*","/dev/*","/proc/*", "/sys/*","/tmp/*","/run/*","/mnt/*","/media/*","/lost+found","/home/*/.nuget/*", "/home/*/.cache/*", "/home/*/OneDrive/*", "/var/cache/pacman/pkg/*"} / $argv
+  end
+end
 
