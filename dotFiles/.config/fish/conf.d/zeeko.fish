@@ -4,6 +4,7 @@ alias stlR="sudo systemctl daemon-reload"
 alias stlp="sudo systemctl stop"
 alias stl="sudo systemctl status"
 alias fsi="dotnet fsi --readline"
+alias tiga="tig --all"
 fish_vi_key_bindings
 
 set -gx DOTNET_ROOT /opt/dotnet
