@@ -1,6 +1,7 @@
 #!/usr/bin/fish
 
 function dvm
+  # move allready intalled sdks to other place
   # find installed sdks
   set sdks (find $DOTNET_ROOT/installed/sdk/ -maxdepth 1 -mindepth 1 | xargs -I {} basename {})
   if test $argv[1] = "ls"

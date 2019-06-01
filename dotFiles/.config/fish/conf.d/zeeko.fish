@@ -6,6 +6,7 @@ alias stl="sudo systemctl status"
 alias fsi="dotnet fsi --readline"
 alias tiga="tig --all"
 fish_vi_key_bindings
+fish_user_key_bindings
 
 set -gx DOTNET_ROOT /opt/dotnet
 set -gx MSBuildSDKsPath /opt/dotnet/sdk/(dotnet --version)/Sdks
