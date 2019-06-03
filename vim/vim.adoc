@@ -205,6 +205,21 @@ Vim 中没有 Copy，Cut 与 Paste。完成这两个常规操作需要先了解�
 
 == 常用命令
 
+=== 禁用鼠标
+
+[source, vim]
+----
+:set mouse=""
+----
+
+=== 高亮指定列
+
+[source, vim]
+----
+# 高亮 80 列
+:set cc=80
+----
+
 === 以 sudo 权限写入
 
 [source,vim]
