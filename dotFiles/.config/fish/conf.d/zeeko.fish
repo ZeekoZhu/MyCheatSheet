@@ -10,7 +10,7 @@ fish_user_key_bindings
 
 set -gx DOTNET_ROOT /opt/dotnet
 set -gx MSBuildSDKsPath /opt/dotnet/sdk/(dotnet --version)/Sdks
-set -gx PATH $HOME/.yarn/bin $HOME/.cargo/bin $HOME/.dotnet/tools $PATH
+set -gx PATH $HOME/.yarn/bin $HOME/.cargo/bin $HOME/.dotnet/tools $HOME/.jetbrains/bin $PATH
 # set -gx HTTP_PROXY http://localhost:8001
 # set -gx HTTPS_PROXY http://localhost:8001
 

@@ -1,5 +1,5 @@
-# Defined in /tmp/fish.SNgcST/alarm.fish @ line 2
+# Defined in /tmp/fish.M9UiM8/alarm.fish @ line 2
 function alarm
 	eval $argv
-  notify-send "DONE" (string escape -n (string join ' ' $argv))
+  notify-send "DONE" (string escape -n -- (string join -- ' ' $argv))
 end
