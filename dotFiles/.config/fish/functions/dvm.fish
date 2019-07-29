@@ -1,9 +1,7 @@
-#!/usr/bin/fish
-
+# Defined in /tmp/fish.Gn5DmZ/dvm.fish @ line 2
 function dvm
-  # move allready intalled sdks to other place
-  # find installed sdks
-  set sdks (find $DOTNET_ROOT/installed/sdk/ -maxdepth 1 -mindepth 1 | xargs -I {} basename {})
+	
+  set sdks (find $DOTNET_HOME -maxdepth 1 -mindepth 1 -type d | xargs -I {} basename {} | grep -Pe '\d.\d')
   if test $argv[1] = "ls"
     for i in $sdks
       echo $i
@@ -11,10 +9,7 @@ function dvm
   end
   if test $argv[1] = "use"
     set index $argv[2]
-    sudo rm -rf $DOTNET_ROOT/sdk/*
-    sudo ln -s $DOTNET_ROOT/installed/sdk/$sdks[$index] $DOTNET_ROOT/sdk/$sdks[$index]
-    set -gx MSBuildSDKsPath $DOTNET_ROOT/sdk/$sdks[$index]
+    rm $DOTNET_HOME/current
+    ln -s $DOTNET_HOME/$sdks[$index] $DOTNET_HOME/current
   end
-
 end
-
