@@ -13,7 +13,7 @@ alias tiga="tig --all"
 fish_vi_key_bindings
 fish_user_key_bindings
 
-if status --is-login
+if status --is-login; and not set -q TMUX
   set -x PATH $HOME/.yarn/bin $HOME/.cargo/bin $HOME/.dotnet/tools $HOME/.dotnet/current $HOME/.jetbrains/bin $PATH
 else
   set -Ux DOTNET_ROLL_FORWARD_ON_NO_CANDIDATE_FX 2

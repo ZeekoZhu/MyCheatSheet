@@ -301,6 +301,9 @@ set -g mode-keys vi
 # set -g prefix C-a
 # bind C-a send-prefix
 
+set -g default-command /usr/bin/fish
+set -g default-shell /usr/bin/fish
+
 # move status line to top
 #set -g status-position top
 
