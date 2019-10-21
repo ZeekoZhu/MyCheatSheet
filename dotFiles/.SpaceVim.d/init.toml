@@ -64,6 +64,13 @@ name = 'tools'
   name = "checkers"
 
 [[layers]]
+  name = "lsp"
+  filetypes = [
+    "javascript",
+    "typescript"
+  ]
+
+[[layers]]
   name = "lang#asciidoc"
 
 [[layers]]
@@ -72,8 +79,8 @@ name = 'lang#toml'
 [[layers]]
 name = 'lang#rust'
 
-[[layers]]
-name = 'lang#fsharp'
+# [[layers]]
+# name = 'lang#fsharp'
 
 [[layers]]
 name = 'lang#dockerfile'
@@ -82,9 +89,9 @@ name = 'lang#dockerfile'
 name = "wakatime/vim-wakatime"
 merged = false
 
-# [[custom_plugins]]
-# name = 'fsharp/vim-fsharp'
-# on_ft = 'fsharp'
-# build = "make fsautocomplete"
-# merged = 0
+[[custom_plugins]]
+name = 'ionide/Ionide-vim'
+on_ft = 'fsharp'
+build = "make fsautocomplete"
+merged = false
 
