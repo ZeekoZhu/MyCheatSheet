@@ -1,0 +1,23 @@
+---
+name: luna_pinyin.custom
+version: "2018.10.05"
+sort: by_weight
+vocabulary: essay-zh-hans
+import_tables:
+    #- luna_pinyin.extended # include next 4 dict
+    - luna_pinyin
+    #- luna_pinyin.hanyu
+    - luna_pinyin.poetry
+    #- luna_pinyin.cn_en
+    - luna_pinyin.xiandaihanyuchangyongcibiao
+    - luna_pinyin.chengyusuyu
+    - luna_pinyin.sijixingzhenquhuadimingciku
+    - luna_pinyin.jisuanjicihuidaquan
+    - luna_pinyin.wangluoliuxingxinci
+    - luna_pinyin.zhongguolishicihuidaquan
+    - luna_pinyin.mingxing
+    - luna_pinyin.emoji
+    - luna_pinyin.emoji.apple
+    - luna_pinyin.emoji.scomper
+    # - luna_pinyin.kaomoji
+

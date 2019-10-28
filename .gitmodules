@@ -1,0 +1,3 @@
+[submodule "Rime"]
+	path = Rime
+	url = https://github.com/alswl/Rime.git
