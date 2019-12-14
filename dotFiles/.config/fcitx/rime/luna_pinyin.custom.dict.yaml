@@ -19,5 +19,5 @@ import_tables:
     - luna_pinyin.emoji
     - luna_pinyin.emoji.apple
     - luna_pinyin.emoji.scomper
-    # - luna_pinyin.kaomoji
+    - luna_pinyin.kaomoji
 

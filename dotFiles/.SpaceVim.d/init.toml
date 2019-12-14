@@ -89,9 +89,3 @@ name = 'lang#dockerfile'
 name = "wakatime/vim-wakatime"
 merged = false
 
-[[custom_plugins]]
-name = 'ionide/Ionide-vim'
-on_ft = 'fsharp'
-build = "make fsautocomplete"
-merged = false
-

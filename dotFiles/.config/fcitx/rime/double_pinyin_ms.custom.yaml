@@ -6,22 +6,6 @@ patch:
     - charset_filter@gb2312+emoji  # https://github.com/rime/librime/pull/293
   engine/translators/+:
     - table_translator@custom_phrase
-  punctuator/half_shape:
-      "/" : "/"
-      "\\" : "、"
-      "[": "「"
-      "]": "」"
-      "|": "|"
-      "<": "<"
-      ">": ">"
-      "$": "￥"
-      "%": "%"
-      "*": "*"
-      "~": "~"
-      "_": "_"
-      "{": "『"
-      "}": "』"
-      "`": "`"
   translator/dictionary: luna_pinyin.custom
   switches/+:
     - options: [gb2312+emoji, gbk+emoji, utf8]  # https://github.com/rime/librime/pull/293
