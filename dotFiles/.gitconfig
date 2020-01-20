@@ -1,0 +1,25 @@
+[core]
+	editor = nvim
+[commit]
+	template = /home/zeeko/.git-commit-template.txt
+	gpgsign = true
+[gpg]
+	program = gpg
+[user]
+	signingkey = 24F664AAAC874752
+	email = jerry@mail.cnblogs.com
+	name = Jerry
+[alias]
+	ignore = "!gi() { curl -sL https://www.gitignore.io/api/$@ ;}; gi"
+	lg = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(dim white) - %an%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n %C(white)%s%C(reset)'
+	commend = commit --amend --no-edit
+	undo = reset HEAD~
+	cs = commit -S
+	ck = checkout
+[i18n]
+	commitencoding = utf-8
+	logoutputencoding = utf-8
+[tag]
+	forceSignAnnotated = false
+[diff]
+	algorithm = patience
