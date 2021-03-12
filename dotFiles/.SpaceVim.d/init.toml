@@ -42,6 +42,7 @@ name = 'colorscheme'
 # Enable autocomplete layer
 [[layers]]
 name = 'autocomplete'
+autocomplete_method = "deoplete"
 
 [[layers]]
 name = 'shell'
@@ -63,12 +64,12 @@ name = 'tools'
 [[layers]]
   name = "checkers"
 
-[[layers]]
-  name = "lsp"
-  filetypes = [
-    "javascript",
-    "typescript"
-  ]
+# [[layers]]
+#   name = "lsp"
+#   filetypes = [
+#     "javascript",
+#     "typescript"
+#   ]
 
 [[layers]]
   name = "lang#asciidoc"

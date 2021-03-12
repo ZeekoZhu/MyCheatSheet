@@ -1,7 +1,8 @@
-#!/usr/bin/fish
+# Defined in /tmp/fish.zKcmXL/prepare_workspace_cnblogs.fish @ line 2
 function prepare_workspace_cnblogs
-  prepare_workspace
+	prepare_workspace
   stls docker
+  w2 start
   set pwd (pwd)
   cd ~/Projects/AppData/dev-env
   docker-compose up -d
